@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    container_name: python-app
+    build:
+      context: .
+    volumes:
+      - .:/app
+    command: "tail -f /dev/null"  # Keep the container running
